@@ -1,0 +1,4936 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabla de Aeropuertos</title>
+  
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-group">
+      <input type="text" id="tableNameInput" class="form-control" placeholder="Nombre deseado para la tabla destino">
+    </div>
+  
+    <div class="form-group">
+      <textarea id="jsonInput" rows="7" class="form-control" placeholder="Pega el JSON aquí">
+        {
+          "data": [
+            {
+              "id": 14,
+              "uuid": "994db5fd-b412-4fc2-8c08-b313230c0ee4",
+              "created_by_id": 6,
+              "updated_by_id": 1,
+              "created_at": "2021-04-20 17:09:39",
+              "updated_at": "2023-06-01 03:34:08",
+              "data": {
+                "id": 14,
+                "IdTipoDeGasto": "1",
+                "FirmaEnPaso1_Puesto": "NO APLICA",
+                "FirmaEnPaso1_UserID": "7",
+                "FirmaEnPaso2_Puesto": "NO APLICA",
+                "FirmaEnPaso2_UserID": "15",
+                "FirmaEnPaso3_Puesto": "NO APLICA",
+                "FirmaEnPaso3_UserID": "NO APLICA",
+                "FirmaEnPaso4_Puesto": "NO APLICA",
+                "FirmaEnPaso4_UserID": "NO APLICA",
+                "MostrarCampoAdicional": false,
+                "DescripcionTipoDeGasto": "Sistemas",
+                "CargarComprobanteFiscal": "Si",
+                "FirmaEnPaso2_MontoSuperiorA": "5000",
+                "FirmaEnPaso3_MontoSuperiorA": "30000",
+                "FirmaEnPaso1_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso2_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso3_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso4_PMUsuario_CampoEspecifico": "NO APLICA"
+              },
+              "collection_id": 16,
+              "is_template": 0,
+              "asset_type": null,
+              "title": "14",
+              "uri_key": 14,
+              "created_by": {
+                "id": 6,
+                "uuid": "994d7d5a-3e36-41e6-93ba-e8f7e53ae7b4",
+                "email": "celeste.montemayor@exel.com.mx",
+                "firstname": "Celeste",
+                "lastname": "Montemayor",
+                "username": "pecommerce",
+                "status": "ACTIVE",
+                "address": null,
+                "city": null,
+                "state": null,
+                "postal": null,
+                "country": null,
+                "phone": null,
+                "fax": null,
+                "cell": null,
+                "title": "Coordinador Medios Digitales",
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "d/m/Y h:i A",
+                "language": "es",
+                "meta": {
+                  "pinnedControls": []
+                },
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-10T15:16:20+00:00",
+                "active_at": "2024-05-10T15:19:48+00:00",
+                "remember_token": "RcpepntsIEux0HUYIGFR5ICLpLL8bsy0RuAiEZCfFvwjLBY6cYEhpGWqplaW",
+                "created_at": "2020-12-30T17:47:46+00:00",
+                "updated_at": "2023-10-26T15:43:39+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": null,
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/5637/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Celeste Montemayor"
+              },
+              "updated_by": {
+                "id": 1,
+                "uuid": "994d7d5a-2e3c-4747-8530-1a2e522cf43d",
+                "email": "Soporte.Web@exel.com.mx",
+                "firstname": "Admin",
+                "lastname": "User",
+                "username": "admin",
+                "status": "ACTIVE",
+                "address": "LAZARO CARDENAS",
+                "city": "MONTERREY",
+                "state": "NUEVO LEON",
+                "postal": "64920",
+                "country": "MX",
+                "phone": "8126816993",
+                "fax": null,
+                "cell": "8126816993",
+                "title": null,
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "m/d/Y H:i",
+                "language": "es",
+                "meta": [],
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-09T18:39:24+00:00",
+                "active_at": "2024-05-09T19:17:07+00:00",
+                "remember_token": "n5sYR93nxuAGQeOLjrXsN5ZcCUWSlDXxE4fRLDzUiluaP10Iq8qRGVSaADGu",
+                "created_at": "2020-12-01T17:57:38+00:00",
+                "updated_at": "2023-11-01T15:30:03+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": {
+                  "Fri": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Mon": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Sat": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Sun": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Thu": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Tue": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Wed": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  }
+                },
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/1/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Admin User"
+              },
+              "collection": {
+                "id": 16,
+                "uuid": "994d7d42-b721-4d36-8acc-34faf220c044",
+                "name": "Solicitud de Cheque - Tipo de Gastos",
+                "description": "Solicitud de Cheque - Tipo de Gastos",
+                "custom_title": "{{ id }}",
+                "obfuscate": false,
+                "create_screen_id": 100,
+                "read_screen_id": 101,
+                "update_screen_id": 100,
+                "columns": [
+                  {
+                    "mask": null,
+                    "field": "id",
+                    "label": "#",
+                    "format": "int",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.DescripcionTipoDeGasto",
+                    "label": "DescTipoGasto",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_UserID",
+                    "label": "Firma1_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_Puesto",
+                    "label": "Firma1_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_PMUsuario_CampoEspecifico",
+                    "label": "Firma1_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_MontoSuperiorA",
+                    "label": "Firma2_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_UserID",
+                    "label": "Firma2_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_Puesto",
+                    "label": "Firma2_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_PMUsuario_CampoEspecifico",
+                    "label": "Firma2_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_MontoSuperiorA",
+                    "label": "Firma3_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_UserID",
+                    "label": "Firma3_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_Puesto",
+                    "label": "Firma3_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_PMUsuario_CampoEspecifico",
+                    "label": "Firma3_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_UserID",
+                    "label": "Firma4_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_Puesto",
+                    "label": "Firma4_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_PMUsuario_CampoEspecifico",
+                    "label": "Firma4_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.CargarComprobanteFiscal",
+                    "label": "CargarCompFiscal",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "updated_at",
+                    "label": "Modified",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "created_at",
+                    "label": "Created",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.MostrarCampoAdicional",
+                    "label": "Mostrar campo adicional de captura (otros proveedores)",
+                    "format": "boolean",
+                    "default": false,
+                    "sortable": true
+                  }
+                ],
+                "signal_create": false,
+                "signal_update": false,
+                "signal_delete": false,
+                "created_by_id": 1,
+                "updated_by_id": 6,
+                "created_at": "2021-02-26 20:28:18",
+                "updated_at": "2022-03-28 23:12:23",
+                "is_template": 0,
+                "asset_type": null,
+                "name_singular": "Solicitud de Cheque - Tipo de Gasto"
+              }
+            },
+            {
+              "id": 15,
+              "uuid": "994db5fd-bda5-4aa9-8a35-1ab1cf99378d",
+              "created_by_id": 6,
+              "updated_by_id": 1,
+              "created_at": "2021-04-20 17:09:39",
+              "updated_at": "2023-06-01 03:34:08",
+              "data": {
+                "id": 15,
+                "IdTipoDeGasto": "2",
+                "FirmaEnPaso1_Puesto": "NO APLICA",
+                "FirmaEnPaso1_UserID": "44",
+                "FirmaEnPaso2_Puesto": "NO APLICA",
+                "FirmaEnPaso2_UserID": "27",
+                "FirmaEnPaso3_Puesto": "NO APLICA",
+                "FirmaEnPaso3_UserID": "15",
+                "FirmaEnPaso4_Puesto": "NO APLICA",
+                "FirmaEnPaso4_UserID": "NO APLICA",
+                "MostrarCampoAdicional": false,
+                "DescripcionTipoDeGasto": "Marketing",
+                "CargarComprobanteFiscal": "Si",
+                "FirmaEnPaso2_MontoSuperiorA": "5000",
+                "FirmaEnPaso3_MontoSuperiorA": "30000",
+                "FirmaEnPaso1_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso2_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso3_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso4_PMUsuario_CampoEspecifico": "NO APLICA"
+              },
+              "collection_id": 16,
+              "is_template": 0,
+              "asset_type": null,
+              "title": "15",
+              "uri_key": 15,
+              "created_by": {
+                "id": 6,
+                "uuid": "994d7d5a-3e36-41e6-93ba-e8f7e53ae7b4",
+                "email": "celeste.montemayor@exel.com.mx",
+                "firstname": "Celeste",
+                "lastname": "Montemayor",
+                "username": "pecommerce",
+                "status": "ACTIVE",
+                "address": null,
+                "city": null,
+                "state": null,
+                "postal": null,
+                "country": null,
+                "phone": null,
+                "fax": null,
+                "cell": null,
+                "title": "Coordinador Medios Digitales",
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "d/m/Y h:i A",
+                "language": "es",
+                "meta": {
+                  "pinnedControls": []
+                },
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-10T15:16:20+00:00",
+                "active_at": "2024-05-10T15:19:48+00:00",
+                "remember_token": "RcpepntsIEux0HUYIGFR5ICLpLL8bsy0RuAiEZCfFvwjLBY6cYEhpGWqplaW",
+                "created_at": "2020-12-30T17:47:46+00:00",
+                "updated_at": "2023-10-26T15:43:39+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": null,
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/5637/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Celeste Montemayor"
+              },
+              "updated_by": {
+                "id": 1,
+                "uuid": "994d7d5a-2e3c-4747-8530-1a2e522cf43d",
+                "email": "Soporte.Web@exel.com.mx",
+                "firstname": "Admin",
+                "lastname": "User",
+                "username": "admin",
+                "status": "ACTIVE",
+                "address": "LAZARO CARDENAS",
+                "city": "MONTERREY",
+                "state": "NUEVO LEON",
+                "postal": "64920",
+                "country": "MX",
+                "phone": "8126816993",
+                "fax": null,
+                "cell": "8126816993",
+                "title": null,
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "m/d/Y H:i",
+                "language": "es",
+                "meta": [],
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-09T18:39:24+00:00",
+                "active_at": "2024-05-09T19:17:07+00:00",
+                "remember_token": "n5sYR93nxuAGQeOLjrXsN5ZcCUWSlDXxE4fRLDzUiluaP10Iq8qRGVSaADGu",
+                "created_at": "2020-12-01T17:57:38+00:00",
+                "updated_at": "2023-11-01T15:30:03+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": {
+                  "Fri": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Mon": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Sat": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Sun": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Thu": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Tue": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Wed": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  }
+                },
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/1/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Admin User"
+              },
+              "collection": {
+                "id": 16,
+                "uuid": "994d7d42-b721-4d36-8acc-34faf220c044",
+                "name": "Solicitud de Cheque - Tipo de Gastos",
+                "description": "Solicitud de Cheque - Tipo de Gastos",
+                "custom_title": "{{ id }}",
+                "obfuscate": false,
+                "create_screen_id": 100,
+                "read_screen_id": 101,
+                "update_screen_id": 100,
+                "columns": [
+                  {
+                    "mask": null,
+                    "field": "id",
+                    "label": "#",
+                    "format": "int",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.DescripcionTipoDeGasto",
+                    "label": "DescTipoGasto",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_UserID",
+                    "label": "Firma1_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_Puesto",
+                    "label": "Firma1_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_PMUsuario_CampoEspecifico",
+                    "label": "Firma1_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_MontoSuperiorA",
+                    "label": "Firma2_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_UserID",
+                    "label": "Firma2_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_Puesto",
+                    "label": "Firma2_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_PMUsuario_CampoEspecifico",
+                    "label": "Firma2_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_MontoSuperiorA",
+                    "label": "Firma3_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_UserID",
+                    "label": "Firma3_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_Puesto",
+                    "label": "Firma3_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_PMUsuario_CampoEspecifico",
+                    "label": "Firma3_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_UserID",
+                    "label": "Firma4_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_Puesto",
+                    "label": "Firma4_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_PMUsuario_CampoEspecifico",
+                    "label": "Firma4_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.CargarComprobanteFiscal",
+                    "label": "CargarCompFiscal",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "updated_at",
+                    "label": "Modified",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "created_at",
+                    "label": "Created",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.MostrarCampoAdicional",
+                    "label": "Mostrar campo adicional de captura (otros proveedores)",
+                    "format": "boolean",
+                    "default": false,
+                    "sortable": true
+                  }
+                ],
+                "signal_create": false,
+                "signal_update": false,
+                "signal_delete": false,
+                "created_by_id": 1,
+                "updated_by_id": 6,
+                "created_at": "2021-02-26 20:28:18",
+                "updated_at": "2022-03-28 23:12:23",
+                "is_template": 0,
+                "asset_type": null,
+                "name_singular": "Solicitud de Cheque - Tipo de Gasto"
+              }
+            },
+            {
+              "id": 16,
+              "uuid": "994db5fd-c60b-47a0-9dbd-10c05548cff0",
+              "created_by_id": 6,
+              "updated_by_id": 1,
+              "created_at": "2021-04-20 17:09:39",
+              "updated_at": "2023-06-01 03:34:08",
+              "data": {
+                "id": 16,
+                "IdTipoDeGasto": "3",
+                "FirmaEnPaso1_Puesto": "NO APLICA",
+                "FirmaEnPaso1_UserID": "7",
+                "FirmaEnPaso2_Puesto": "NO APLICA",
+                "FirmaEnPaso2_UserID": "NO APLICA",
+                "FirmaEnPaso3_Puesto": "NO APLICA",
+                "FirmaEnPaso3_UserID": "NO APLICA",
+                "FirmaEnPaso4_Puesto": "NO APLICA",
+                "FirmaEnPaso4_UserID": "NO APLICA",
+                "MostrarCampoAdicional": false,
+                "DescripcionTipoDeGasto": "Insumos",
+                "CargarComprobanteFiscal": "Si",
+                "FirmaEnPaso2_MontoSuperiorA": "5000",
+                "FirmaEnPaso3_MontoSuperiorA": "30000",
+                "FirmaEnPaso1_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso2_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso3_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso4_PMUsuario_CampoEspecifico": "NO APLICA"
+              },
+              "collection_id": 16,
+              "is_template": 0,
+              "asset_type": null,
+              "title": "16",
+              "uri_key": 16,
+              "created_by": {
+                "id": 6,
+                "uuid": "994d7d5a-3e36-41e6-93ba-e8f7e53ae7b4",
+                "email": "celeste.montemayor@exel.com.mx",
+                "firstname": "Celeste",
+                "lastname": "Montemayor",
+                "username": "pecommerce",
+                "status": "ACTIVE",
+                "address": null,
+                "city": null,
+                "state": null,
+                "postal": null,
+                "country": null,
+                "phone": null,
+                "fax": null,
+                "cell": null,
+                "title": "Coordinador Medios Digitales",
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "d/m/Y h:i A",
+                "language": "es",
+                "meta": {
+                  "pinnedControls": []
+                },
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-10T15:16:20+00:00",
+                "active_at": "2024-05-10T15:19:48+00:00",
+                "remember_token": "RcpepntsIEux0HUYIGFR5ICLpLL8bsy0RuAiEZCfFvwjLBY6cYEhpGWqplaW",
+                "created_at": "2020-12-30T17:47:46+00:00",
+                "updated_at": "2023-10-26T15:43:39+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": null,
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/5637/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Celeste Montemayor"
+              },
+              "updated_by": {
+                "id": 1,
+                "uuid": "994d7d5a-2e3c-4747-8530-1a2e522cf43d",
+                "email": "Soporte.Web@exel.com.mx",
+                "firstname": "Admin",
+                "lastname": "User",
+                "username": "admin",
+                "status": "ACTIVE",
+                "address": "LAZARO CARDENAS",
+                "city": "MONTERREY",
+                "state": "NUEVO LEON",
+                "postal": "64920",
+                "country": "MX",
+                "phone": "8126816993",
+                "fax": null,
+                "cell": "8126816993",
+                "title": null,
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "m/d/Y H:i",
+                "language": "es",
+                "meta": [],
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-09T18:39:24+00:00",
+                "active_at": "2024-05-09T19:17:07+00:00",
+                "remember_token": "n5sYR93nxuAGQeOLjrXsN5ZcCUWSlDXxE4fRLDzUiluaP10Iq8qRGVSaADGu",
+                "created_at": "2020-12-01T17:57:38+00:00",
+                "updated_at": "2023-11-01T15:30:03+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": {
+                  "Fri": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Mon": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Sat": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Sun": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Thu": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Tue": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Wed": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  }
+                },
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/1/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Admin User"
+              },
+              "collection": {
+                "id": 16,
+                "uuid": "994d7d42-b721-4d36-8acc-34faf220c044",
+                "name": "Solicitud de Cheque - Tipo de Gastos",
+                "description": "Solicitud de Cheque - Tipo de Gastos",
+                "custom_title": "{{ id }}",
+                "obfuscate": false,
+                "create_screen_id": 100,
+                "read_screen_id": 101,
+                "update_screen_id": 100,
+                "columns": [
+                  {
+                    "mask": null,
+                    "field": "id",
+                    "label": "#",
+                    "format": "int",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.DescripcionTipoDeGasto",
+                    "label": "DescTipoGasto",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_UserID",
+                    "label": "Firma1_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_Puesto",
+                    "label": "Firma1_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_PMUsuario_CampoEspecifico",
+                    "label": "Firma1_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_MontoSuperiorA",
+                    "label": "Firma2_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_UserID",
+                    "label": "Firma2_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_Puesto",
+                    "label": "Firma2_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_PMUsuario_CampoEspecifico",
+                    "label": "Firma2_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_MontoSuperiorA",
+                    "label": "Firma3_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_UserID",
+                    "label": "Firma3_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_Puesto",
+                    "label": "Firma3_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_PMUsuario_CampoEspecifico",
+                    "label": "Firma3_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_UserID",
+                    "label": "Firma4_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_Puesto",
+                    "label": "Firma4_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_PMUsuario_CampoEspecifico",
+                    "label": "Firma4_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.CargarComprobanteFiscal",
+                    "label": "CargarCompFiscal",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "updated_at",
+                    "label": "Modified",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "created_at",
+                    "label": "Created",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.MostrarCampoAdicional",
+                    "label": "Mostrar campo adicional de captura (otros proveedores)",
+                    "format": "boolean",
+                    "default": false,
+                    "sortable": true
+                  }
+                ],
+                "signal_create": false,
+                "signal_update": false,
+                "signal_delete": false,
+                "created_by_id": 1,
+                "updated_by_id": 6,
+                "created_at": "2021-02-26 20:28:18",
+                "updated_at": "2022-03-28 23:12:23",
+                "is_template": 0,
+                "asset_type": null,
+                "name_singular": "Solicitud de Cheque - Tipo de Gasto"
+              }
+            },
+            {
+              "id": 17,
+              "uuid": "994db5fd-cd99-4e9c-8cf1-c815773a0b45",
+              "created_by_id": 6,
+              "updated_by_id": 1,
+              "created_at": "2021-04-20 17:09:39",
+              "updated_at": "2023-06-01 03:34:08",
+              "data": {
+                "id": 17,
+                "IdTipoDeGasto": "4",
+                "FirmaEnPaso1_Puesto": "NO APLICA",
+                "FirmaEnPaso1_UserID": "29",
+                "FirmaEnPaso2_Puesto": "NO APLICA",
+                "FirmaEnPaso2_UserID": "NO APLICA",
+                "FirmaEnPaso3_Puesto": "NO APLICA",
+                "FirmaEnPaso3_UserID": "NO APLICA",
+                "FirmaEnPaso4_Puesto": "NO APLICA",
+                "FirmaEnPaso4_UserID": "NO APLICA",
+                "MostrarCampoAdicional": false,
+                "DescripcionTipoDeGasto": "Gasolina",
+                "CargarComprobanteFiscal": "No",
+                "FirmaEnPaso2_MontoSuperiorA": "5000",
+                "FirmaEnPaso3_MontoSuperiorA": "30000",
+                "FirmaEnPaso1_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso2_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso3_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso4_PMUsuario_CampoEspecifico": "NO APLICA"
+              },
+              "collection_id": 16,
+              "is_template": 0,
+              "asset_type": null,
+              "title": "17",
+              "uri_key": 17,
+              "created_by": {
+                "id": 6,
+                "uuid": "994d7d5a-3e36-41e6-93ba-e8f7e53ae7b4",
+                "email": "celeste.montemayor@exel.com.mx",
+                "firstname": "Celeste",
+                "lastname": "Montemayor",
+                "username": "pecommerce",
+                "status": "ACTIVE",
+                "address": null,
+                "city": null,
+                "state": null,
+                "postal": null,
+                "country": null,
+                "phone": null,
+                "fax": null,
+                "cell": null,
+                "title": "Coordinador Medios Digitales",
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "d/m/Y h:i A",
+                "language": "es",
+                "meta": {
+                  "pinnedControls": []
+                },
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-10T15:16:20+00:00",
+                "active_at": "2024-05-10T15:19:48+00:00",
+                "remember_token": "RcpepntsIEux0HUYIGFR5ICLpLL8bsy0RuAiEZCfFvwjLBY6cYEhpGWqplaW",
+                "created_at": "2020-12-30T17:47:46+00:00",
+                "updated_at": "2023-10-26T15:43:39+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": null,
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/5637/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Celeste Montemayor"
+              },
+              "updated_by": {
+                "id": 1,
+                "uuid": "994d7d5a-2e3c-4747-8530-1a2e522cf43d",
+                "email": "Soporte.Web@exel.com.mx",
+                "firstname": "Admin",
+                "lastname": "User",
+                "username": "admin",
+                "status": "ACTIVE",
+                "address": "LAZARO CARDENAS",
+                "city": "MONTERREY",
+                "state": "NUEVO LEON",
+                "postal": "64920",
+                "country": "MX",
+                "phone": "8126816993",
+                "fax": null,
+                "cell": "8126816993",
+                "title": null,
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "m/d/Y H:i",
+                "language": "es",
+                "meta": [],
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-09T18:39:24+00:00",
+                "active_at": "2024-05-09T19:17:07+00:00",
+                "remember_token": "n5sYR93nxuAGQeOLjrXsN5ZcCUWSlDXxE4fRLDzUiluaP10Iq8qRGVSaADGu",
+                "created_at": "2020-12-01T17:57:38+00:00",
+                "updated_at": "2023-11-01T15:30:03+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": {
+                  "Fri": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Mon": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Sat": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Sun": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Thu": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Tue": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Wed": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  }
+                },
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/1/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Admin User"
+              },
+              "collection": {
+                "id": 16,
+                "uuid": "994d7d42-b721-4d36-8acc-34faf220c044",
+                "name": "Solicitud de Cheque - Tipo de Gastos",
+                "description": "Solicitud de Cheque - Tipo de Gastos",
+                "custom_title": "{{ id }}",
+                "obfuscate": false,
+                "create_screen_id": 100,
+                "read_screen_id": 101,
+                "update_screen_id": 100,
+                "columns": [
+                  {
+                    "mask": null,
+                    "field": "id",
+                    "label": "#",
+                    "format": "int",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.DescripcionTipoDeGasto",
+                    "label": "DescTipoGasto",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_UserID",
+                    "label": "Firma1_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_Puesto",
+                    "label": "Firma1_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_PMUsuario_CampoEspecifico",
+                    "label": "Firma1_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_MontoSuperiorA",
+                    "label": "Firma2_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_UserID",
+                    "label": "Firma2_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_Puesto",
+                    "label": "Firma2_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_PMUsuario_CampoEspecifico",
+                    "label": "Firma2_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_MontoSuperiorA",
+                    "label": "Firma3_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_UserID",
+                    "label": "Firma3_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_Puesto",
+                    "label": "Firma3_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_PMUsuario_CampoEspecifico",
+                    "label": "Firma3_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_UserID",
+                    "label": "Firma4_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_Puesto",
+                    "label": "Firma4_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_PMUsuario_CampoEspecifico",
+                    "label": "Firma4_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.CargarComprobanteFiscal",
+                    "label": "CargarCompFiscal",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "updated_at",
+                    "label": "Modified",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "created_at",
+                    "label": "Created",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.MostrarCampoAdicional",
+                    "label": "Mostrar campo adicional de captura (otros proveedores)",
+                    "format": "boolean",
+                    "default": false,
+                    "sortable": true
+                  }
+                ],
+                "signal_create": false,
+                "signal_update": false,
+                "signal_delete": false,
+                "created_by_id": 1,
+                "updated_by_id": 6,
+                "created_at": "2021-02-26 20:28:18",
+                "updated_at": "2022-03-28 23:12:23",
+                "is_template": 0,
+                "asset_type": null,
+                "name_singular": "Solicitud de Cheque - Tipo de Gasto"
+              }
+            },
+            {
+              "id": 18,
+              "uuid": "994db5fd-d55a-4bd1-8cc8-5e9c6296bdc7",
+              "created_by_id": 6,
+              "updated_by_id": 1,
+              "created_at": "2021-04-20 17:09:39",
+              "updated_at": "2023-06-01 03:34:08",
+              "data": {
+                "id": 18,
+                "IdTipoDeGasto": "5",
+                "FirmaEnPaso1_Puesto": "NO APLICA",
+                "FirmaEnPaso1_UserID": "49",
+                "FirmaEnPaso2_Puesto": "NO APLICA",
+                "FirmaEnPaso2_UserID": "7",
+                "FirmaEnPaso3_Puesto": "NO APLICA",
+                "FirmaEnPaso3_UserID": "15",
+                "FirmaEnPaso4_Puesto": "NO APLICA",
+                "FirmaEnPaso4_UserID": "NO APLICA",
+                "MostrarCampoAdicional": false,
+                "DescripcionTipoDeGasto": "Operaciones México",
+                "CargarComprobanteFiscal": "Si",
+                "FirmaEnPaso2_MontoSuperiorA": "5000",
+                "FirmaEnPaso3_MontoSuperiorA": "30000",
+                "FirmaEnPaso1_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso2_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso3_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso4_PMUsuario_CampoEspecifico": "NO APLICA"
+              },
+              "collection_id": 16,
+              "is_template": 0,
+              "asset_type": null,
+              "title": "18",
+              "uri_key": 18,
+              "created_by": {
+                "id": 6,
+                "uuid": "994d7d5a-3e36-41e6-93ba-e8f7e53ae7b4",
+                "email": "celeste.montemayor@exel.com.mx",
+                "firstname": "Celeste",
+                "lastname": "Montemayor",
+                "username": "pecommerce",
+                "status": "ACTIVE",
+                "address": null,
+                "city": null,
+                "state": null,
+                "postal": null,
+                "country": null,
+                "phone": null,
+                "fax": null,
+                "cell": null,
+                "title": "Coordinador Medios Digitales",
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "d/m/Y h:i A",
+                "language": "es",
+                "meta": {
+                  "pinnedControls": []
+                },
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-10T15:16:20+00:00",
+                "active_at": "2024-05-10T15:19:48+00:00",
+                "remember_token": "RcpepntsIEux0HUYIGFR5ICLpLL8bsy0RuAiEZCfFvwjLBY6cYEhpGWqplaW",
+                "created_at": "2020-12-30T17:47:46+00:00",
+                "updated_at": "2023-10-26T15:43:39+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": null,
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/5637/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Celeste Montemayor"
+              },
+              "updated_by": {
+                "id": 1,
+                "uuid": "994d7d5a-2e3c-4747-8530-1a2e522cf43d",
+                "email": "Soporte.Web@exel.com.mx",
+                "firstname": "Admin",
+                "lastname": "User",
+                "username": "admin",
+                "status": "ACTIVE",
+                "address": "LAZARO CARDENAS",
+                "city": "MONTERREY",
+                "state": "NUEVO LEON",
+                "postal": "64920",
+                "country": "MX",
+                "phone": "8126816993",
+                "fax": null,
+                "cell": "8126816993",
+                "title": null,
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "m/d/Y H:i",
+                "language": "es",
+                "meta": [],
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-09T18:39:24+00:00",
+                "active_at": "2024-05-09T19:17:07+00:00",
+                "remember_token": "n5sYR93nxuAGQeOLjrXsN5ZcCUWSlDXxE4fRLDzUiluaP10Iq8qRGVSaADGu",
+                "created_at": "2020-12-01T17:57:38+00:00",
+                "updated_at": "2023-11-01T15:30:03+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": {
+                  "Fri": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Mon": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Sat": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Sun": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Thu": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Tue": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Wed": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  }
+                },
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/1/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Admin User"
+              },
+              "collection": {
+                "id": 16,
+                "uuid": "994d7d42-b721-4d36-8acc-34faf220c044",
+                "name": "Solicitud de Cheque - Tipo de Gastos",
+                "description": "Solicitud de Cheque - Tipo de Gastos",
+                "custom_title": "{{ id }}",
+                "obfuscate": false,
+                "create_screen_id": 100,
+                "read_screen_id": 101,
+                "update_screen_id": 100,
+                "columns": [
+                  {
+                    "mask": null,
+                    "field": "id",
+                    "label": "#",
+                    "format": "int",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.DescripcionTipoDeGasto",
+                    "label": "DescTipoGasto",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_UserID",
+                    "label": "Firma1_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_Puesto",
+                    "label": "Firma1_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_PMUsuario_CampoEspecifico",
+                    "label": "Firma1_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_MontoSuperiorA",
+                    "label": "Firma2_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_UserID",
+                    "label": "Firma2_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_Puesto",
+                    "label": "Firma2_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_PMUsuario_CampoEspecifico",
+                    "label": "Firma2_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_MontoSuperiorA",
+                    "label": "Firma3_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_UserID",
+                    "label": "Firma3_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_Puesto",
+                    "label": "Firma3_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_PMUsuario_CampoEspecifico",
+                    "label": "Firma3_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_UserID",
+                    "label": "Firma4_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_Puesto",
+                    "label": "Firma4_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_PMUsuario_CampoEspecifico",
+                    "label": "Firma4_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.CargarComprobanteFiscal",
+                    "label": "CargarCompFiscal",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "updated_at",
+                    "label": "Modified",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "created_at",
+                    "label": "Created",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.MostrarCampoAdicional",
+                    "label": "Mostrar campo adicional de captura (otros proveedores)",
+                    "format": "boolean",
+                    "default": false,
+                    "sortable": true
+                  }
+                ],
+                "signal_create": false,
+                "signal_update": false,
+                "signal_delete": false,
+                "created_by_id": 1,
+                "updated_by_id": 6,
+                "created_at": "2021-02-26 20:28:18",
+                "updated_at": "2022-03-28 23:12:23",
+                "is_template": 0,
+                "asset_type": null,
+                "name_singular": "Solicitud de Cheque - Tipo de Gasto"
+              }
+            },
+            {
+              "id": 19,
+              "uuid": "994db5fd-dbe1-4e4f-bee4-100ab9a08bd1",
+              "created_by_id": 6,
+              "updated_by_id": 1,
+              "created_at": "2021-04-20 17:09:39",
+              "updated_at": "2023-06-01 03:34:08",
+              "data": {
+                "id": 19,
+                "IdTipoDeGasto": "6",
+                "FirmaEnPaso1_Puesto": "NO APLICA",
+                "FirmaEnPaso1_UserID": "49",
+                "FirmaEnPaso2_Puesto": "NO APLICA",
+                "FirmaEnPaso2_UserID": "7",
+                "FirmaEnPaso3_Puesto": "NO APLICA",
+                "FirmaEnPaso3_UserID": "15",
+                "FirmaEnPaso4_Puesto": "NO APLICA",
+                "FirmaEnPaso4_UserID": "NO APLICA",
+                "MostrarCampoAdicional": true,
+                "DescripcionTipoDeGasto": "Operaciones Otras Sucursales",
+                "CargarComprobanteFiscal": "Si",
+                "FirmaEnPaso2_MontoSuperiorA": "5000",
+                "FirmaEnPaso3_MontoSuperiorA": "30000",
+                "FirmaEnPaso1_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso2_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso3_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso4_PMUsuario_CampoEspecifico": "NO APLICA"
+              },
+              "collection_id": 16,
+              "is_template": 0,
+              "asset_type": null,
+              "title": "19",
+              "uri_key": 19,
+              "created_by": {
+                "id": 6,
+                "uuid": "994d7d5a-3e36-41e6-93ba-e8f7e53ae7b4",
+                "email": "celeste.montemayor@exel.com.mx",
+                "firstname": "Celeste",
+                "lastname": "Montemayor",
+                "username": "pecommerce",
+                "status": "ACTIVE",
+                "address": null,
+                "city": null,
+                "state": null,
+                "postal": null,
+                "country": null,
+                "phone": null,
+                "fax": null,
+                "cell": null,
+                "title": "Coordinador Medios Digitales",
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "d/m/Y h:i A",
+                "language": "es",
+                "meta": {
+                  "pinnedControls": []
+                },
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-10T15:16:20+00:00",
+                "active_at": "2024-05-10T15:19:48+00:00",
+                "remember_token": "RcpepntsIEux0HUYIGFR5ICLpLL8bsy0RuAiEZCfFvwjLBY6cYEhpGWqplaW",
+                "created_at": "2020-12-30T17:47:46+00:00",
+                "updated_at": "2023-10-26T15:43:39+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": null,
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/5637/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Celeste Montemayor"
+              },
+              "updated_by": {
+                "id": 1,
+                "uuid": "994d7d5a-2e3c-4747-8530-1a2e522cf43d",
+                "email": "Soporte.Web@exel.com.mx",
+                "firstname": "Admin",
+                "lastname": "User",
+                "username": "admin",
+                "status": "ACTIVE",
+                "address": "LAZARO CARDENAS",
+                "city": "MONTERREY",
+                "state": "NUEVO LEON",
+                "postal": "64920",
+                "country": "MX",
+                "phone": "8126816993",
+                "fax": null,
+                "cell": "8126816993",
+                "title": null,
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "m/d/Y H:i",
+                "language": "es",
+                "meta": [],
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-09T18:39:24+00:00",
+                "active_at": "2024-05-09T19:17:07+00:00",
+                "remember_token": "n5sYR93nxuAGQeOLjrXsN5ZcCUWSlDXxE4fRLDzUiluaP10Iq8qRGVSaADGu",
+                "created_at": "2020-12-01T17:57:38+00:00",
+                "updated_at": "2023-11-01T15:30:03+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": {
+                  "Fri": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Mon": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Sat": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Sun": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Thu": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Tue": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Wed": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  }
+                },
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/1/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Admin User"
+              },
+              "collection": {
+                "id": 16,
+                "uuid": "994d7d42-b721-4d36-8acc-34faf220c044",
+                "name": "Solicitud de Cheque - Tipo de Gastos",
+                "description": "Solicitud de Cheque - Tipo de Gastos",
+                "custom_title": "{{ id }}",
+                "obfuscate": false,
+                "create_screen_id": 100,
+                "read_screen_id": 101,
+                "update_screen_id": 100,
+                "columns": [
+                  {
+                    "mask": null,
+                    "field": "id",
+                    "label": "#",
+                    "format": "int",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.DescripcionTipoDeGasto",
+                    "label": "DescTipoGasto",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_UserID",
+                    "label": "Firma1_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_Puesto",
+                    "label": "Firma1_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_PMUsuario_CampoEspecifico",
+                    "label": "Firma1_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_MontoSuperiorA",
+                    "label": "Firma2_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_UserID",
+                    "label": "Firma2_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_Puesto",
+                    "label": "Firma2_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_PMUsuario_CampoEspecifico",
+                    "label": "Firma2_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_MontoSuperiorA",
+                    "label": "Firma3_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_UserID",
+                    "label": "Firma3_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_Puesto",
+                    "label": "Firma3_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_PMUsuario_CampoEspecifico",
+                    "label": "Firma3_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_UserID",
+                    "label": "Firma4_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_Puesto",
+                    "label": "Firma4_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_PMUsuario_CampoEspecifico",
+                    "label": "Firma4_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.CargarComprobanteFiscal",
+                    "label": "CargarCompFiscal",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "updated_at",
+                    "label": "Modified",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "created_at",
+                    "label": "Created",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.MostrarCampoAdicional",
+                    "label": "Mostrar campo adicional de captura (otros proveedores)",
+                    "format": "boolean",
+                    "default": false,
+                    "sortable": true
+                  }
+                ],
+                "signal_create": false,
+                "signal_update": false,
+                "signal_delete": false,
+                "created_by_id": 1,
+                "updated_by_id": 6,
+                "created_at": "2021-02-26 20:28:18",
+                "updated_at": "2022-03-28 23:12:23",
+                "is_template": 0,
+                "asset_type": null,
+                "name_singular": "Solicitud de Cheque - Tipo de Gasto"
+              }
+            },
+            {
+              "id": 21,
+              "uuid": "994db5fd-eaf8-4c06-9a9d-884520d650a2",
+              "created_by_id": 6,
+              "updated_by_id": 1,
+              "created_at": "2021-04-20 17:09:39",
+              "updated_at": "2023-06-01 03:34:08",
+              "data": {
+                "id": 21,
+                "IdTipoDeGasto": "8",
+                "FirmaEnPaso1_Puesto": "Gerente de Sucursal",
+                "FirmaEnPaso1_UserID": "NO APLICA",
+                "FirmaEnPaso2_Puesto": "NO APLICA",
+                "FirmaEnPaso2_UserID": "NO APLICA",
+                "FirmaEnPaso3_Puesto": "NO APLICA",
+                "FirmaEnPaso3_UserID": "NO APLICA",
+                "FirmaEnPaso4_Puesto": "NO APLICA",
+                "FirmaEnPaso4_UserID": "NO APLICA",
+                "MostrarCampoAdicional": true,
+                "DescripcionTipoDeGasto": "Pago de Servicios Públicos",
+                "CargarComprobanteFiscal": "Si",
+                "FirmaEnPaso2_MontoSuperiorA": "5000",
+                "FirmaEnPaso3_MontoSuperiorA": "30000",
+                "FirmaEnPaso1_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso2_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso3_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso4_PMUsuario_CampoEspecifico": "NO APLICA"
+              },
+              "collection_id": 16,
+              "is_template": 0,
+              "asset_type": null,
+              "title": "21",
+              "uri_key": 21,
+              "created_by": {
+                "id": 6,
+                "uuid": "994d7d5a-3e36-41e6-93ba-e8f7e53ae7b4",
+                "email": "celeste.montemayor@exel.com.mx",
+                "firstname": "Celeste",
+                "lastname": "Montemayor",
+                "username": "pecommerce",
+                "status": "ACTIVE",
+                "address": null,
+                "city": null,
+                "state": null,
+                "postal": null,
+                "country": null,
+                "phone": null,
+                "fax": null,
+                "cell": null,
+                "title": "Coordinador Medios Digitales",
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "d/m/Y h:i A",
+                "language": "es",
+                "meta": {
+                  "pinnedControls": []
+                },
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-10T15:16:20+00:00",
+                "active_at": "2024-05-10T15:19:48+00:00",
+                "remember_token": "RcpepntsIEux0HUYIGFR5ICLpLL8bsy0RuAiEZCfFvwjLBY6cYEhpGWqplaW",
+                "created_at": "2020-12-30T17:47:46+00:00",
+                "updated_at": "2023-10-26T15:43:39+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": null,
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/5637/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Celeste Montemayor"
+              },
+              "updated_by": {
+                "id": 1,
+                "uuid": "994d7d5a-2e3c-4747-8530-1a2e522cf43d",
+                "email": "Soporte.Web@exel.com.mx",
+                "firstname": "Admin",
+                "lastname": "User",
+                "username": "admin",
+                "status": "ACTIVE",
+                "address": "LAZARO CARDENAS",
+                "city": "MONTERREY",
+                "state": "NUEVO LEON",
+                "postal": "64920",
+                "country": "MX",
+                "phone": "8126816993",
+                "fax": null,
+                "cell": "8126816993",
+                "title": null,
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "m/d/Y H:i",
+                "language": "es",
+                "meta": [],
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-09T18:39:24+00:00",
+                "active_at": "2024-05-09T19:17:07+00:00",
+                "remember_token": "n5sYR93nxuAGQeOLjrXsN5ZcCUWSlDXxE4fRLDzUiluaP10Iq8qRGVSaADGu",
+                "created_at": "2020-12-01T17:57:38+00:00",
+                "updated_at": "2023-11-01T15:30:03+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": {
+                  "Fri": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Mon": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Sat": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Sun": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Thu": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Tue": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Wed": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  }
+                },
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/1/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Admin User"
+              },
+              "collection": {
+                "id": 16,
+                "uuid": "994d7d42-b721-4d36-8acc-34faf220c044",
+                "name": "Solicitud de Cheque - Tipo de Gastos",
+                "description": "Solicitud de Cheque - Tipo de Gastos",
+                "custom_title": "{{ id }}",
+                "obfuscate": false,
+                "create_screen_id": 100,
+                "read_screen_id": 101,
+                "update_screen_id": 100,
+                "columns": [
+                  {
+                    "mask": null,
+                    "field": "id",
+                    "label": "#",
+                    "format": "int",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.DescripcionTipoDeGasto",
+                    "label": "DescTipoGasto",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_UserID",
+                    "label": "Firma1_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_Puesto",
+                    "label": "Firma1_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_PMUsuario_CampoEspecifico",
+                    "label": "Firma1_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_MontoSuperiorA",
+                    "label": "Firma2_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_UserID",
+                    "label": "Firma2_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_Puesto",
+                    "label": "Firma2_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_PMUsuario_CampoEspecifico",
+                    "label": "Firma2_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_MontoSuperiorA",
+                    "label": "Firma3_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_UserID",
+                    "label": "Firma3_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_Puesto",
+                    "label": "Firma3_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_PMUsuario_CampoEspecifico",
+                    "label": "Firma3_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_UserID",
+                    "label": "Firma4_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_Puesto",
+                    "label": "Firma4_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_PMUsuario_CampoEspecifico",
+                    "label": "Firma4_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.CargarComprobanteFiscal",
+                    "label": "CargarCompFiscal",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "updated_at",
+                    "label": "Modified",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "created_at",
+                    "label": "Created",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.MostrarCampoAdicional",
+                    "label": "Mostrar campo adicional de captura (otros proveedores)",
+                    "format": "boolean",
+                    "default": false,
+                    "sortable": true
+                  }
+                ],
+                "signal_create": false,
+                "signal_update": false,
+                "signal_delete": false,
+                "created_by_id": 1,
+                "updated_by_id": 6,
+                "created_at": "2021-02-26 20:28:18",
+                "updated_at": "2022-03-28 23:12:23",
+                "is_template": 0,
+                "asset_type": null,
+                "name_singular": "Solicitud de Cheque - Tipo de Gasto"
+              }
+            },
+            {
+              "id": 22,
+              "uuid": "994db5fd-f295-4c9f-bd26-7daa4571f004",
+              "created_by_id": 6,
+              "updated_by_id": 1,
+              "created_at": "2021-04-20 17:09:39",
+              "updated_at": "2023-06-01 03:34:08",
+              "data": {
+                "id": 22,
+                "IdTipoDeGasto": "9",
+                "FirmaEnPaso1_Puesto": "Gerente de Sucursal",
+                "FirmaEnPaso1_UserID": "NO APLICA",
+                "FirmaEnPaso2_Puesto": "NO APLICA",
+                "FirmaEnPaso2_UserID": "NO APLICA",
+                "FirmaEnPaso3_Puesto": "NO APLICA",
+                "FirmaEnPaso3_UserID": "NO APLICA",
+                "FirmaEnPaso4_Puesto": "NO APLICA",
+                "FirmaEnPaso4_UserID": "NO APLICA",
+                "MostrarCampoAdicional": true,
+                "DescripcionTipoDeGasto": "Cenas de Inventario - Fin de Mes",
+                "CargarComprobanteFiscal": "Si",
+                "FirmaEnPaso2_MontoSuperiorA": "5000",
+                "FirmaEnPaso3_MontoSuperiorA": "30000",
+                "FirmaEnPaso1_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso2_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso3_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso4_PMUsuario_CampoEspecifico": "NO APLICA"
+              },
+              "collection_id": 16,
+              "is_template": 0,
+              "asset_type": null,
+              "title": "22",
+              "uri_key": 22,
+              "created_by": {
+                "id": 6,
+                "uuid": "994d7d5a-3e36-41e6-93ba-e8f7e53ae7b4",
+                "email": "celeste.montemayor@exel.com.mx",
+                "firstname": "Celeste",
+                "lastname": "Montemayor",
+                "username": "pecommerce",
+                "status": "ACTIVE",
+                "address": null,
+                "city": null,
+                "state": null,
+                "postal": null,
+                "country": null,
+                "phone": null,
+                "fax": null,
+                "cell": null,
+                "title": "Coordinador Medios Digitales",
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "d/m/Y h:i A",
+                "language": "es",
+                "meta": {
+                  "pinnedControls": []
+                },
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-10T15:16:20+00:00",
+                "active_at": "2024-05-10T15:19:48+00:00",
+                "remember_token": "RcpepntsIEux0HUYIGFR5ICLpLL8bsy0RuAiEZCfFvwjLBY6cYEhpGWqplaW",
+                "created_at": "2020-12-30T17:47:46+00:00",
+                "updated_at": "2023-10-26T15:43:39+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": null,
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/5637/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Celeste Montemayor"
+              },
+              "updated_by": {
+                "id": 1,
+                "uuid": "994d7d5a-2e3c-4747-8530-1a2e522cf43d",
+                "email": "Soporte.Web@exel.com.mx",
+                "firstname": "Admin",
+                "lastname": "User",
+                "username": "admin",
+                "status": "ACTIVE",
+                "address": "LAZARO CARDENAS",
+                "city": "MONTERREY",
+                "state": "NUEVO LEON",
+                "postal": "64920",
+                "country": "MX",
+                "phone": "8126816993",
+                "fax": null,
+                "cell": "8126816993",
+                "title": null,
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "m/d/Y H:i",
+                "language": "es",
+                "meta": [],
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-09T18:39:24+00:00",
+                "active_at": "2024-05-09T19:17:07+00:00",
+                "remember_token": "n5sYR93nxuAGQeOLjrXsN5ZcCUWSlDXxE4fRLDzUiluaP10Iq8qRGVSaADGu",
+                "created_at": "2020-12-01T17:57:38+00:00",
+                "updated_at": "2023-11-01T15:30:03+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": {
+                  "Fri": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Mon": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Sat": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Sun": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Thu": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Tue": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Wed": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  }
+                },
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/1/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Admin User"
+              },
+              "collection": {
+                "id": 16,
+                "uuid": "994d7d42-b721-4d36-8acc-34faf220c044",
+                "name": "Solicitud de Cheque - Tipo de Gastos",
+                "description": "Solicitud de Cheque - Tipo de Gastos",
+                "custom_title": "{{ id }}",
+                "obfuscate": false,
+                "create_screen_id": 100,
+                "read_screen_id": 101,
+                "update_screen_id": 100,
+                "columns": [
+                  {
+                    "mask": null,
+                    "field": "id",
+                    "label": "#",
+                    "format": "int",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.DescripcionTipoDeGasto",
+                    "label": "DescTipoGasto",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_UserID",
+                    "label": "Firma1_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_Puesto",
+                    "label": "Firma1_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_PMUsuario_CampoEspecifico",
+                    "label": "Firma1_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_MontoSuperiorA",
+                    "label": "Firma2_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_UserID",
+                    "label": "Firma2_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_Puesto",
+                    "label": "Firma2_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_PMUsuario_CampoEspecifico",
+                    "label": "Firma2_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_MontoSuperiorA",
+                    "label": "Firma3_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_UserID",
+                    "label": "Firma3_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_Puesto",
+                    "label": "Firma3_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_PMUsuario_CampoEspecifico",
+                    "label": "Firma3_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_UserID",
+                    "label": "Firma4_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_Puesto",
+                    "label": "Firma4_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_PMUsuario_CampoEspecifico",
+                    "label": "Firma4_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.CargarComprobanteFiscal",
+                    "label": "CargarCompFiscal",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "updated_at",
+                    "label": "Modified",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "created_at",
+                    "label": "Created",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.MostrarCampoAdicional",
+                    "label": "Mostrar campo adicional de captura (otros proveedores)",
+                    "format": "boolean",
+                    "default": false,
+                    "sortable": true
+                  }
+                ],
+                "signal_create": false,
+                "signal_update": false,
+                "signal_delete": false,
+                "created_by_id": 1,
+                "updated_by_id": 6,
+                "created_at": "2021-02-26 20:28:18",
+                "updated_at": "2022-03-28 23:12:23",
+                "is_template": 0,
+                "asset_type": null,
+                "name_singular": "Solicitud de Cheque - Tipo de Gasto"
+              }
+            },
+            {
+              "id": 23,
+              "uuid": "994db5fd-fa22-4077-b367-348b2500b0de",
+              "created_by_id": 6,
+              "updated_by_id": 1,
+              "created_at": "2021-04-20 17:09:39",
+              "updated_at": "2023-06-01 03:34:08",
+              "data": {
+                "id": 23,
+                "IdTipoDeGasto": "10",
+                "FirmaEnPaso1_Puesto": "NO APLICA",
+                "FirmaEnPaso1_UserID": "NO APLICA",
+                "FirmaEnPaso2_Puesto": "NO APLICA",
+                "FirmaEnPaso2_UserID": "15",
+                "FirmaEnPaso3_Puesto": "NO APLICA",
+                "FirmaEnPaso3_UserID": "NO APLICA",
+                "FirmaEnPaso4_Puesto": "NO APLICA",
+                "FirmaEnPaso4_UserID": "NO APLICA",
+                "MostrarCampoAdicional": true,
+                "DescripcionTipoDeGasto": "Reembolso de Gastos",
+                "CargarComprobanteFiscal": "No",
+                "FirmaEnPaso2_MontoSuperiorA": "5000",
+                "FirmaEnPaso3_MontoSuperiorA": "30000",
+                "FirmaEnPaso1_PMUsuario_CampoEspecifico": "PM_UserIDJefeDirecto",
+                "FirmaEnPaso2_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso3_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso4_PMUsuario_CampoEspecifico": "NO APLICA"
+              },
+              "collection_id": 16,
+              "is_template": 0,
+              "asset_type": null,
+              "title": "23",
+              "uri_key": 23,
+              "created_by": {
+                "id": 6,
+                "uuid": "994d7d5a-3e36-41e6-93ba-e8f7e53ae7b4",
+                "email": "celeste.montemayor@exel.com.mx",
+                "firstname": "Celeste",
+                "lastname": "Montemayor",
+                "username": "pecommerce",
+                "status": "ACTIVE",
+                "address": null,
+                "city": null,
+                "state": null,
+                "postal": null,
+                "country": null,
+                "phone": null,
+                "fax": null,
+                "cell": null,
+                "title": "Coordinador Medios Digitales",
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "d/m/Y h:i A",
+                "language": "es",
+                "meta": {
+                  "pinnedControls": []
+                },
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-10T15:16:20+00:00",
+                "active_at": "2024-05-10T15:19:48+00:00",
+                "remember_token": "RcpepntsIEux0HUYIGFR5ICLpLL8bsy0RuAiEZCfFvwjLBY6cYEhpGWqplaW",
+                "created_at": "2020-12-30T17:47:46+00:00",
+                "updated_at": "2023-10-26T15:43:39+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": null,
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/5637/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Celeste Montemayor"
+              },
+              "updated_by": {
+                "id": 1,
+                "uuid": "994d7d5a-2e3c-4747-8530-1a2e522cf43d",
+                "email": "Soporte.Web@exel.com.mx",
+                "firstname": "Admin",
+                "lastname": "User",
+                "username": "admin",
+                "status": "ACTIVE",
+                "address": "LAZARO CARDENAS",
+                "city": "MONTERREY",
+                "state": "NUEVO LEON",
+                "postal": "64920",
+                "country": "MX",
+                "phone": "8126816993",
+                "fax": null,
+                "cell": "8126816993",
+                "title": null,
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "m/d/Y H:i",
+                "language": "es",
+                "meta": [],
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-09T18:39:24+00:00",
+                "active_at": "2024-05-09T19:17:07+00:00",
+                "remember_token": "n5sYR93nxuAGQeOLjrXsN5ZcCUWSlDXxE4fRLDzUiluaP10Iq8qRGVSaADGu",
+                "created_at": "2020-12-01T17:57:38+00:00",
+                "updated_at": "2023-11-01T15:30:03+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": {
+                  "Fri": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Mon": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Sat": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Sun": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Thu": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Tue": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Wed": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  }
+                },
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/1/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Admin User"
+              },
+              "collection": {
+                "id": 16,
+                "uuid": "994d7d42-b721-4d36-8acc-34faf220c044",
+                "name": "Solicitud de Cheque - Tipo de Gastos",
+                "description": "Solicitud de Cheque - Tipo de Gastos",
+                "custom_title": "{{ id }}",
+                "obfuscate": false,
+                "create_screen_id": 100,
+                "read_screen_id": 101,
+                "update_screen_id": 100,
+                "columns": [
+                  {
+                    "mask": null,
+                    "field": "id",
+                    "label": "#",
+                    "format": "int",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.DescripcionTipoDeGasto",
+                    "label": "DescTipoGasto",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_UserID",
+                    "label": "Firma1_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_Puesto",
+                    "label": "Firma1_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_PMUsuario_CampoEspecifico",
+                    "label": "Firma1_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_MontoSuperiorA",
+                    "label": "Firma2_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_UserID",
+                    "label": "Firma2_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_Puesto",
+                    "label": "Firma2_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_PMUsuario_CampoEspecifico",
+                    "label": "Firma2_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_MontoSuperiorA",
+                    "label": "Firma3_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_UserID",
+                    "label": "Firma3_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_Puesto",
+                    "label": "Firma3_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_PMUsuario_CampoEspecifico",
+                    "label": "Firma3_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_UserID",
+                    "label": "Firma4_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_Puesto",
+                    "label": "Firma4_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_PMUsuario_CampoEspecifico",
+                    "label": "Firma4_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.CargarComprobanteFiscal",
+                    "label": "CargarCompFiscal",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "updated_at",
+                    "label": "Modified",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "created_at",
+                    "label": "Created",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.MostrarCampoAdicional",
+                    "label": "Mostrar campo adicional de captura (otros proveedores)",
+                    "format": "boolean",
+                    "default": false,
+                    "sortable": true
+                  }
+                ],
+                "signal_create": false,
+                "signal_update": false,
+                "signal_delete": false,
+                "created_by_id": 1,
+                "updated_by_id": 6,
+                "created_at": "2021-02-26 20:28:18",
+                "updated_at": "2022-03-28 23:12:23",
+                "is_template": 0,
+                "asset_type": null,
+                "name_singular": "Solicitud de Cheque - Tipo de Gasto"
+              }
+            },
+            {
+              "id": 24,
+              "uuid": "994db5fe-011c-4568-b69b-4003dc47b85b",
+              "created_by_id": 6,
+              "updated_by_id": 1,
+              "created_at": "2021-04-20 17:09:39",
+              "updated_at": "2023-06-01 03:34:08",
+              "data": {
+                "id": 24,
+                "IdTipoDeGasto": "11",
+                "FirmaEnPaso1_Puesto": "Gerente de Sucursal",
+                "FirmaEnPaso1_UserID": "NO APLICA",
+                "FirmaEnPaso2_Puesto": "NO APLICA",
+                "FirmaEnPaso2_UserID": "NO APLICA",
+                "FirmaEnPaso3_Puesto": "NO APLICA",
+                "FirmaEnPaso3_UserID": "15",
+                "FirmaEnPaso4_Puesto": "NO APLICA",
+                "FirmaEnPaso4_UserID": "NO APLICA",
+                "MostrarCampoAdicional": false,
+                "DescripcionTipoDeGasto": "Activos Fijos",
+                "CargarComprobanteFiscal": "Si",
+                "FirmaEnPaso2_MontoSuperiorA": "5000",
+                "FirmaEnPaso3_MontoSuperiorA": "30000",
+                "FirmaEnPaso1_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso2_PMUsuario_CampoEspecifico": "PM_UserIDDirector",
+                "FirmaEnPaso3_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso4_PMUsuario_CampoEspecifico": "NO APLICA"
+              },
+              "collection_id": 16,
+              "is_template": 0,
+              "asset_type": null,
+              "title": "24",
+              "uri_key": 24,
+              "created_by": {
+                "id": 6,
+                "uuid": "994d7d5a-3e36-41e6-93ba-e8f7e53ae7b4",
+                "email": "celeste.montemayor@exel.com.mx",
+                "firstname": "Celeste",
+                "lastname": "Montemayor",
+                "username": "pecommerce",
+                "status": "ACTIVE",
+                "address": null,
+                "city": null,
+                "state": null,
+                "postal": null,
+                "country": null,
+                "phone": null,
+                "fax": null,
+                "cell": null,
+                "title": "Coordinador Medios Digitales",
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "d/m/Y h:i A",
+                "language": "es",
+                "meta": {
+                  "pinnedControls": []
+                },
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-10T15:16:20+00:00",
+                "active_at": "2024-05-10T15:19:48+00:00",
+                "remember_token": "RcpepntsIEux0HUYIGFR5ICLpLL8bsy0RuAiEZCfFvwjLBY6cYEhpGWqplaW",
+                "created_at": "2020-12-30T17:47:46+00:00",
+                "updated_at": "2023-10-26T15:43:39+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": null,
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/5637/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Celeste Montemayor"
+              },
+              "updated_by": {
+                "id": 1,
+                "uuid": "994d7d5a-2e3c-4747-8530-1a2e522cf43d",
+                "email": "Soporte.Web@exel.com.mx",
+                "firstname": "Admin",
+                "lastname": "User",
+                "username": "admin",
+                "status": "ACTIVE",
+                "address": "LAZARO CARDENAS",
+                "city": "MONTERREY",
+                "state": "NUEVO LEON",
+                "postal": "64920",
+                "country": "MX",
+                "phone": "8126816993",
+                "fax": null,
+                "cell": "8126816993",
+                "title": null,
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "m/d/Y H:i",
+                "language": "es",
+                "meta": [],
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-09T18:39:24+00:00",
+                "active_at": "2024-05-09T19:17:07+00:00",
+                "remember_token": "n5sYR93nxuAGQeOLjrXsN5ZcCUWSlDXxE4fRLDzUiluaP10Iq8qRGVSaADGu",
+                "created_at": "2020-12-01T17:57:38+00:00",
+                "updated_at": "2023-11-01T15:30:03+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": {
+                  "Fri": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Mon": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Sat": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Sun": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Thu": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Tue": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Wed": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  }
+                },
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/1/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Admin User"
+              },
+              "collection": {
+                "id": 16,
+                "uuid": "994d7d42-b721-4d36-8acc-34faf220c044",
+                "name": "Solicitud de Cheque - Tipo de Gastos",
+                "description": "Solicitud de Cheque - Tipo de Gastos",
+                "custom_title": "{{ id }}",
+                "obfuscate": false,
+                "create_screen_id": 100,
+                "read_screen_id": 101,
+                "update_screen_id": 100,
+                "columns": [
+                  {
+                    "mask": null,
+                    "field": "id",
+                    "label": "#",
+                    "format": "int",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.DescripcionTipoDeGasto",
+                    "label": "DescTipoGasto",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_UserID",
+                    "label": "Firma1_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_Puesto",
+                    "label": "Firma1_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_PMUsuario_CampoEspecifico",
+                    "label": "Firma1_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_MontoSuperiorA",
+                    "label": "Firma2_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_UserID",
+                    "label": "Firma2_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_Puesto",
+                    "label": "Firma2_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_PMUsuario_CampoEspecifico",
+                    "label": "Firma2_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_MontoSuperiorA",
+                    "label": "Firma3_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_UserID",
+                    "label": "Firma3_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_Puesto",
+                    "label": "Firma3_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_PMUsuario_CampoEspecifico",
+                    "label": "Firma3_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_UserID",
+                    "label": "Firma4_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_Puesto",
+                    "label": "Firma4_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_PMUsuario_CampoEspecifico",
+                    "label": "Firma4_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.CargarComprobanteFiscal",
+                    "label": "CargarCompFiscal",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "updated_at",
+                    "label": "Modified",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "created_at",
+                    "label": "Created",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.MostrarCampoAdicional",
+                    "label": "Mostrar campo adicional de captura (otros proveedores)",
+                    "format": "boolean",
+                    "default": false,
+                    "sortable": true
+                  }
+                ],
+                "signal_create": false,
+                "signal_update": false,
+                "signal_delete": false,
+                "created_by_id": 1,
+                "updated_by_id": 6,
+                "created_at": "2021-02-26 20:28:18",
+                "updated_at": "2022-03-28 23:12:23",
+                "is_template": 0,
+                "asset_type": null,
+                "name_singular": "Solicitud de Cheque - Tipo de Gasto"
+              }
+            },
+            {
+              "id": 26,
+              "uuid": "994db5fe-0f29-418a-a641-07db9bac365a",
+              "created_by_id": 6,
+              "updated_by_id": 1,
+              "created_at": "2021-04-20 17:09:39",
+              "updated_at": "2023-06-01 03:34:08",
+              "data": {
+                "id": 26,
+                "IdTipoDeGasto": "13",
+                "FirmaEnPaso1_Puesto": "Coordinador Nacional de Credito y Cobranza",
+                "FirmaEnPaso1_UserID": "NO APLICA",
+                "FirmaEnPaso2_Puesto": "Gerente Credito y Cobranza",
+                "FirmaEnPaso2_UserID": "NO APLICA",
+                "FirmaEnPaso3_Puesto": "NO APLICA",
+                "FirmaEnPaso3_UserID": "14",
+                "FirmaEnPaso4_Puesto": "Contador General",
+                "FirmaEnPaso4_UserID": "NO APLICA",
+                "MostrarCampoAdicional": true,
+                "DescripcionTipoDeGasto": "Devoluciones a Clientes",
+                "CargarComprobanteFiscal": "No",
+                "FirmaEnPaso2_MontoSuperiorA": "5000",
+                "FirmaEnPaso3_MontoSuperiorA": "30000",
+                "FirmaEnPaso1_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso2_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso3_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso4_PMUsuario_CampoEspecifico": "NO APLICA"
+              },
+              "collection_id": 16,
+              "is_template": 0,
+              "asset_type": null,
+              "title": "26",
+              "uri_key": 26,
+              "created_by": {
+                "id": 6,
+                "uuid": "994d7d5a-3e36-41e6-93ba-e8f7e53ae7b4",
+                "email": "celeste.montemayor@exel.com.mx",
+                "firstname": "Celeste",
+                "lastname": "Montemayor",
+                "username": "pecommerce",
+                "status": "ACTIVE",
+                "address": null,
+                "city": null,
+                "state": null,
+                "postal": null,
+                "country": null,
+                "phone": null,
+                "fax": null,
+                "cell": null,
+                "title": "Coordinador Medios Digitales",
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "d/m/Y h:i A",
+                "language": "es",
+                "meta": {
+                  "pinnedControls": []
+                },
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-10T15:16:20+00:00",
+                "active_at": "2024-05-10T15:19:48+00:00",
+                "remember_token": "RcpepntsIEux0HUYIGFR5ICLpLL8bsy0RuAiEZCfFvwjLBY6cYEhpGWqplaW",
+                "created_at": "2020-12-30T17:47:46+00:00",
+                "updated_at": "2023-10-26T15:43:39+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": null,
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/5637/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Celeste Montemayor"
+              },
+              "updated_by": {
+                "id": 1,
+                "uuid": "994d7d5a-2e3c-4747-8530-1a2e522cf43d",
+                "email": "Soporte.Web@exel.com.mx",
+                "firstname": "Admin",
+                "lastname": "User",
+                "username": "admin",
+                "status": "ACTIVE",
+                "address": "LAZARO CARDENAS",
+                "city": "MONTERREY",
+                "state": "NUEVO LEON",
+                "postal": "64920",
+                "country": "MX",
+                "phone": "8126816993",
+                "fax": null,
+                "cell": "8126816993",
+                "title": null,
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "m/d/Y H:i",
+                "language": "es",
+                "meta": [],
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-09T18:39:24+00:00",
+                "active_at": "2024-05-09T19:17:07+00:00",
+                "remember_token": "n5sYR93nxuAGQeOLjrXsN5ZcCUWSlDXxE4fRLDzUiluaP10Iq8qRGVSaADGu",
+                "created_at": "2020-12-01T17:57:38+00:00",
+                "updated_at": "2023-11-01T15:30:03+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": {
+                  "Fri": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Mon": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Sat": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Sun": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Thu": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Tue": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Wed": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  }
+                },
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/1/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Admin User"
+              },
+              "collection": {
+                "id": 16,
+                "uuid": "994d7d42-b721-4d36-8acc-34faf220c044",
+                "name": "Solicitud de Cheque - Tipo de Gastos",
+                "description": "Solicitud de Cheque - Tipo de Gastos",
+                "custom_title": "{{ id }}",
+                "obfuscate": false,
+                "create_screen_id": 100,
+                "read_screen_id": 101,
+                "update_screen_id": 100,
+                "columns": [
+                  {
+                    "mask": null,
+                    "field": "id",
+                    "label": "#",
+                    "format": "int",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.DescripcionTipoDeGasto",
+                    "label": "DescTipoGasto",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_UserID",
+                    "label": "Firma1_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_Puesto",
+                    "label": "Firma1_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_PMUsuario_CampoEspecifico",
+                    "label": "Firma1_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_MontoSuperiorA",
+                    "label": "Firma2_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_UserID",
+                    "label": "Firma2_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_Puesto",
+                    "label": "Firma2_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_PMUsuario_CampoEspecifico",
+                    "label": "Firma2_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_MontoSuperiorA",
+                    "label": "Firma3_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_UserID",
+                    "label": "Firma3_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_Puesto",
+                    "label": "Firma3_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_PMUsuario_CampoEspecifico",
+                    "label": "Firma3_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_UserID",
+                    "label": "Firma4_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_Puesto",
+                    "label": "Firma4_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_PMUsuario_CampoEspecifico",
+                    "label": "Firma4_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.CargarComprobanteFiscal",
+                    "label": "CargarCompFiscal",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "updated_at",
+                    "label": "Modified",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "created_at",
+                    "label": "Created",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.MostrarCampoAdicional",
+                    "label": "Mostrar campo adicional de captura (otros proveedores)",
+                    "format": "boolean",
+                    "default": false,
+                    "sortable": true
+                  }
+                ],
+                "signal_create": false,
+                "signal_update": false,
+                "signal_delete": false,
+                "created_by_id": 1,
+                "updated_by_id": 6,
+                "created_at": "2021-02-26 20:28:18",
+                "updated_at": "2022-03-28 23:12:23",
+                "is_template": 0,
+                "asset_type": null,
+                "name_singular": "Solicitud de Cheque - Tipo de Gasto"
+              }
+            },
+            {
+              "id": 28,
+              "uuid": "994db5fe-1728-4992-88ad-1477f1ed8fa7",
+              "created_by_id": 6,
+              "updated_by_id": 1,
+              "created_at": "2021-07-16 20:22:15",
+              "updated_at": "2023-06-01 03:34:08",
+              "data": {
+                "id": 28,
+                "IdTipoDeGasto": "14",
+                "FirmaEnPaso1_Puesto": "NO APLICA",
+                "FirmaEnPaso1_UserID": "6",
+                "FirmaEnPaso2_Puesto": "NO APLICA",
+                "FirmaEnPaso2_UserID": "1",
+                "FirmaEnPaso3_Puesto": "NO APLICA",
+                "FirmaEnPaso3_UserID": "6",
+                "FirmaEnPaso4_Puesto": "NO APLICA",
+                "FirmaEnPaso4_UserID": "NO APLICA",
+                "MostrarCampoAdicional": false,
+                "DescripcionTipoDeGasto": "Prueba de sistemas",
+                "CargarComprobanteFiscal": "Si",
+                "FirmaEnPaso2_MontoSuperiorA": "0",
+                "FirmaEnPaso3_MontoSuperiorA": "0",
+                "FirmaEnPaso1_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso2_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso3_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso4_PMUsuario_CampoEspecifico": "NO APLICA"
+              },
+              "collection_id": 16,
+              "is_template": 0,
+              "asset_type": null,
+              "title": "28",
+              "uri_key": 28,
+              "created_by": {
+                "id": 6,
+                "uuid": "994d7d5a-3e36-41e6-93ba-e8f7e53ae7b4",
+                "email": "celeste.montemayor@exel.com.mx",
+                "firstname": "Celeste",
+                "lastname": "Montemayor",
+                "username": "pecommerce",
+                "status": "ACTIVE",
+                "address": null,
+                "city": null,
+                "state": null,
+                "postal": null,
+                "country": null,
+                "phone": null,
+                "fax": null,
+                "cell": null,
+                "title": "Coordinador Medios Digitales",
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "d/m/Y h:i A",
+                "language": "es",
+                "meta": {
+                  "pinnedControls": []
+                },
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-10T15:16:20+00:00",
+                "active_at": "2024-05-10T15:19:48+00:00",
+                "remember_token": "RcpepntsIEux0HUYIGFR5ICLpLL8bsy0RuAiEZCfFvwjLBY6cYEhpGWqplaW",
+                "created_at": "2020-12-30T17:47:46+00:00",
+                "updated_at": "2023-10-26T15:43:39+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": null,
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/5637/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Celeste Montemayor"
+              },
+              "updated_by": {
+                "id": 1,
+                "uuid": "994d7d5a-2e3c-4747-8530-1a2e522cf43d",
+                "email": "Soporte.Web@exel.com.mx",
+                "firstname": "Admin",
+                "lastname": "User",
+                "username": "admin",
+                "status": "ACTIVE",
+                "address": "LAZARO CARDENAS",
+                "city": "MONTERREY",
+                "state": "NUEVO LEON",
+                "postal": "64920",
+                "country": "MX",
+                "phone": "8126816993",
+                "fax": null,
+                "cell": "8126816993",
+                "title": null,
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "m/d/Y H:i",
+                "language": "es",
+                "meta": [],
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-09T18:39:24+00:00",
+                "active_at": "2024-05-09T19:17:07+00:00",
+                "remember_token": "n5sYR93nxuAGQeOLjrXsN5ZcCUWSlDXxE4fRLDzUiluaP10Iq8qRGVSaADGu",
+                "created_at": "2020-12-01T17:57:38+00:00",
+                "updated_at": "2023-11-01T15:30:03+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": {
+                  "Fri": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Mon": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Sat": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Sun": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Thu": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Tue": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Wed": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  }
+                },
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/1/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Admin User"
+              },
+              "collection": {
+                "id": 16,
+                "uuid": "994d7d42-b721-4d36-8acc-34faf220c044",
+                "name": "Solicitud de Cheque - Tipo de Gastos",
+                "description": "Solicitud de Cheque - Tipo de Gastos",
+                "custom_title": "{{ id }}",
+                "obfuscate": false,
+                "create_screen_id": 100,
+                "read_screen_id": 101,
+                "update_screen_id": 100,
+                "columns": [
+                  {
+                    "mask": null,
+                    "field": "id",
+                    "label": "#",
+                    "format": "int",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.DescripcionTipoDeGasto",
+                    "label": "DescTipoGasto",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_UserID",
+                    "label": "Firma1_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_Puesto",
+                    "label": "Firma1_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_PMUsuario_CampoEspecifico",
+                    "label": "Firma1_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_MontoSuperiorA",
+                    "label": "Firma2_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_UserID",
+                    "label": "Firma2_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_Puesto",
+                    "label": "Firma2_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_PMUsuario_CampoEspecifico",
+                    "label": "Firma2_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_MontoSuperiorA",
+                    "label": "Firma3_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_UserID",
+                    "label": "Firma3_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_Puesto",
+                    "label": "Firma3_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_PMUsuario_CampoEspecifico",
+                    "label": "Firma3_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_UserID",
+                    "label": "Firma4_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_Puesto",
+                    "label": "Firma4_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_PMUsuario_CampoEspecifico",
+                    "label": "Firma4_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.CargarComprobanteFiscal",
+                    "label": "CargarCompFiscal",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "updated_at",
+                    "label": "Modified",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "created_at",
+                    "label": "Created",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.MostrarCampoAdicional",
+                    "label": "Mostrar campo adicional de captura (otros proveedores)",
+                    "format": "boolean",
+                    "default": false,
+                    "sortable": true
+                  }
+                ],
+                "signal_create": false,
+                "signal_update": false,
+                "signal_delete": false,
+                "created_by_id": 1,
+                "updated_by_id": 6,
+                "created_at": "2021-02-26 20:28:18",
+                "updated_at": "2022-03-28 23:12:23",
+                "is_template": 0,
+                "asset_type": null,
+                "name_singular": "Solicitud de Cheque - Tipo de Gasto"
+              }
+            },
+            {
+              "id": 29,
+              "uuid": "994db5fe-1f1b-4a90-9bfe-033625627138",
+              "created_by_id": 6,
+              "updated_by_id": 1,
+              "created_at": "2022-03-09 19:25:03",
+              "updated_at": "2023-06-01 03:34:08",
+              "data": {
+                "id": 29,
+                "IdTipoDeGasto": "15",
+                "FirmaEnPaso1_Puesto": "NO APLICA",
+                "FirmaEnPaso1_UserID": "NO APLICA",
+                "FirmaEnPaso2_Puesto": "NO APLICA",
+                "FirmaEnPaso2_UserID": "NO APLICA",
+                "FirmaEnPaso3_Puesto": "NO APLICA",
+                "FirmaEnPaso3_UserID": "15",
+                "FirmaEnPaso4_Puesto": "NO APLICA",
+                "FirmaEnPaso4_UserID": "NO APLICA",
+                "MostrarCampoAdicional": true,
+                "DescripcionTipoDeGasto": "Gastos por Comprobar",
+                "CargarComprobanteFiscal": "Si",
+                "FirmaEnPaso2_MontoSuperiorA": "5000",
+                "FirmaEnPaso3_MontoSuperiorA": "30000",
+                "FirmaEnPaso1_PMUsuario_CampoEspecifico": "PM_UserIDJefeDirecto",
+                "FirmaEnPaso2_PMUsuario_CampoEspecifico": "PM_UserIDDirector",
+                "FirmaEnPaso3_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso4_PMUsuario_CampoEspecifico": "NO APLICA"
+              },
+              "collection_id": 16,
+              "is_template": 0,
+              "asset_type": null,
+              "title": "29",
+              "uri_key": 29,
+              "created_by": {
+                "id": 6,
+                "uuid": "994d7d5a-3e36-41e6-93ba-e8f7e53ae7b4",
+                "email": "celeste.montemayor@exel.com.mx",
+                "firstname": "Celeste",
+                "lastname": "Montemayor",
+                "username": "pecommerce",
+                "status": "ACTIVE",
+                "address": null,
+                "city": null,
+                "state": null,
+                "postal": null,
+                "country": null,
+                "phone": null,
+                "fax": null,
+                "cell": null,
+                "title": "Coordinador Medios Digitales",
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "d/m/Y h:i A",
+                "language": "es",
+                "meta": {
+                  "pinnedControls": []
+                },
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-10T15:16:20+00:00",
+                "active_at": "2024-05-10T15:19:48+00:00",
+                "remember_token": "RcpepntsIEux0HUYIGFR5ICLpLL8bsy0RuAiEZCfFvwjLBY6cYEhpGWqplaW",
+                "created_at": "2020-12-30T17:47:46+00:00",
+                "updated_at": "2023-10-26T15:43:39+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": null,
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/5637/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Celeste Montemayor"
+              },
+              "updated_by": {
+                "id": 1,
+                "uuid": "994d7d5a-2e3c-4747-8530-1a2e522cf43d",
+                "email": "Soporte.Web@exel.com.mx",
+                "firstname": "Admin",
+                "lastname": "User",
+                "username": "admin",
+                "status": "ACTIVE",
+                "address": "LAZARO CARDENAS",
+                "city": "MONTERREY",
+                "state": "NUEVO LEON",
+                "postal": "64920",
+                "country": "MX",
+                "phone": "8126816993",
+                "fax": null,
+                "cell": "8126816993",
+                "title": null,
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "m/d/Y H:i",
+                "language": "es",
+                "meta": [],
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-09T18:39:24+00:00",
+                "active_at": "2024-05-09T19:17:07+00:00",
+                "remember_token": "n5sYR93nxuAGQeOLjrXsN5ZcCUWSlDXxE4fRLDzUiluaP10Iq8qRGVSaADGu",
+                "created_at": "2020-12-01T17:57:38+00:00",
+                "updated_at": "2023-11-01T15:30:03+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": {
+                  "Fri": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Mon": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Sat": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Sun": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Thu": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Tue": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Wed": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  }
+                },
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/1/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Admin User"
+              },
+              "collection": {
+                "id": 16,
+                "uuid": "994d7d42-b721-4d36-8acc-34faf220c044",
+                "name": "Solicitud de Cheque - Tipo de Gastos",
+                "description": "Solicitud de Cheque - Tipo de Gastos",
+                "custom_title": "{{ id }}",
+                "obfuscate": false,
+                "create_screen_id": 100,
+                "read_screen_id": 101,
+                "update_screen_id": 100,
+                "columns": [
+                  {
+                    "mask": null,
+                    "field": "id",
+                    "label": "#",
+                    "format": "int",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.DescripcionTipoDeGasto",
+                    "label": "DescTipoGasto",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_UserID",
+                    "label": "Firma1_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_Puesto",
+                    "label": "Firma1_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_PMUsuario_CampoEspecifico",
+                    "label": "Firma1_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_MontoSuperiorA",
+                    "label": "Firma2_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_UserID",
+                    "label": "Firma2_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_Puesto",
+                    "label": "Firma2_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_PMUsuario_CampoEspecifico",
+                    "label": "Firma2_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_MontoSuperiorA",
+                    "label": "Firma3_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_UserID",
+                    "label": "Firma3_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_Puesto",
+                    "label": "Firma3_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_PMUsuario_CampoEspecifico",
+                    "label": "Firma3_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_UserID",
+                    "label": "Firma4_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_Puesto",
+                    "label": "Firma4_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_PMUsuario_CampoEspecifico",
+                    "label": "Firma4_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.CargarComprobanteFiscal",
+                    "label": "CargarCompFiscal",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "updated_at",
+                    "label": "Modified",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "created_at",
+                    "label": "Created",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.MostrarCampoAdicional",
+                    "label": "Mostrar campo adicional de captura (otros proveedores)",
+                    "format": "boolean",
+                    "default": false,
+                    "sortable": true
+                  }
+                ],
+                "signal_create": false,
+                "signal_update": false,
+                "signal_delete": false,
+                "created_by_id": 1,
+                "updated_by_id": 6,
+                "created_at": "2021-02-26 20:28:18",
+                "updated_at": "2022-03-28 23:12:23",
+                "is_template": 0,
+                "asset_type": null,
+                "name_singular": "Solicitud de Cheque - Tipo de Gasto"
+              }
+            },
+            {
+              "id": 30,
+              "uuid": "994db5fe-2701-499d-8d35-dd11000d6611",
+              "created_by_id": 6,
+              "updated_by_id": 1,
+              "created_at": "2022-06-27 12:16:39",
+              "updated_at": "2023-06-01 03:34:08",
+              "data": {
+                "id": 30,
+                "IdTipoDeGasto": "30",
+                "FirmaEnPaso1_Puesto": "NO APLICA",
+                "FirmaEnPaso1_UserID": "44",
+                "FirmaEnPaso2_Puesto": "NO APLICA",
+                "FirmaEnPaso2_UserID": "27",
+                "FirmaEnPaso3_Puesto": "Coordinador Ejecutivo de D.G.",
+                "FirmaEnPaso3_UserID": "15",
+                "FirmaEnPaso4_Puesto": "NO APLICA",
+                "FirmaEnPaso4_UserID": "NO APLICA",
+                "MostrarCampoAdicional": false,
+                "DescripcionTipoDeGasto": "Marketing (Evento Completo)",
+                "CargarComprobanteFiscal": "Si",
+                "FirmaEnPaso2_MontoSuperiorA": "0",
+                "FirmaEnPaso3_MontoSuperiorA": "0",
+                "FirmaEnPaso1_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso2_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso3_PMUsuario_CampoEspecifico": "NO APLICA",
+                "FirmaEnPaso4_PMUsuario_CampoEspecifico": "NO APLICA"
+              },
+              "collection_id": 16,
+              "is_template": 0,
+              "asset_type": null,
+              "title": "30",
+              "uri_key": 30,
+              "created_by": {
+                "id": 6,
+                "uuid": "994d7d5a-3e36-41e6-93ba-e8f7e53ae7b4",
+                "email": "celeste.montemayor@exel.com.mx",
+                "firstname": "Celeste",
+                "lastname": "Montemayor",
+                "username": "pecommerce",
+                "status": "ACTIVE",
+                "address": null,
+                "city": null,
+                "state": null,
+                "postal": null,
+                "country": null,
+                "phone": null,
+                "fax": null,
+                "cell": null,
+                "title": "Coordinador Medios Digitales",
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "d/m/Y h:i A",
+                "language": "es",
+                "meta": {
+                  "pinnedControls": []
+                },
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-10T15:16:20+00:00",
+                "active_at": "2024-05-10T15:19:48+00:00",
+                "remember_token": "RcpepntsIEux0HUYIGFR5ICLpLL8bsy0RuAiEZCfFvwjLBY6cYEhpGWqplaW",
+                "created_at": "2020-12-30T17:47:46+00:00",
+                "updated_at": "2023-10-26T15:43:39+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": null,
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/5637/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Celeste Montemayor"
+              },
+              "updated_by": {
+                "id": 1,
+                "uuid": "994d7d5a-2e3c-4747-8530-1a2e522cf43d",
+                "email": "Soporte.Web@exel.com.mx",
+                "firstname": "Admin",
+                "lastname": "User",
+                "username": "admin",
+                "status": "ACTIVE",
+                "address": "LAZARO CARDENAS",
+                "city": "MONTERREY",
+                "state": "NUEVO LEON",
+                "postal": "64920",
+                "country": "MX",
+                "phone": "8126816993",
+                "fax": null,
+                "cell": "8126816993",
+                "title": null,
+                "birthdate": null,
+                "timezone": "Mexico/General",
+                "datetime_format": "m/d/Y H:i",
+                "language": "es",
+                "meta": [],
+                "connected_accounts": null,
+                "is_administrator": true,
+                "is_system": 0,
+                "expires_at": null,
+                "loggedin_at": "2024-05-09T18:39:24+00:00",
+                "active_at": "2024-05-09T19:17:07+00:00",
+                "remember_token": "n5sYR93nxuAGQeOLjrXsN5ZcCUWSlDXxE4fRLDzUiluaP10Iq8qRGVSaADGu",
+                "created_at": "2020-12-01T17:57:38+00:00",
+                "updated_at": "2023-11-01T15:30:03+00:00",
+                "deleted_at": null,
+                "external_auth_id": null,
+                "delegation_user_id": null,
+                "manager_id": null,
+                "schedule": {
+                  "Fri": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Mon": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Sat": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Sun": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": false
+                  },
+                  "Thu": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Tue": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  },
+                  "Wed": {
+                    "to": "16:00",
+                    "from": "08:00",
+                    "active": true
+                  }
+                },
+                "force_change_password": 0,
+                "avatar": "https://exel.cloud.processmaker.net/storage/profile/1/img.png",
+                "password_changed_at": null,
+                "preferences_2fa": null,
+                "fullname": "Admin User"
+              },
+              "collection": {
+                "id": 16,
+                "uuid": "994d7d42-b721-4d36-8acc-34faf220c044",
+                "name": "Solicitud de Cheque - Tipo de Gastos",
+                "description": "Solicitud de Cheque - Tipo de Gastos",
+                "custom_title": "{{ id }}",
+                "obfuscate": false,
+                "create_screen_id": 100,
+                "read_screen_id": 101,
+                "update_screen_id": 100,
+                "columns": [
+                  {
+                    "mask": null,
+                    "field": "id",
+                    "label": "#",
+                    "format": "int",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.DescripcionTipoDeGasto",
+                    "label": "DescTipoGasto",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_UserID",
+                    "label": "Firma1_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_Puesto",
+                    "label": "Firma1_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso1_PMUsuario_CampoEspecifico",
+                    "label": "Firma1_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_MontoSuperiorA",
+                    "label": "Firma2_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_UserID",
+                    "label": "Firma2_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_Puesto",
+                    "label": "Firma2_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso2_PMUsuario_CampoEspecifico",
+                    "label": "Firma2_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_MontoSuperiorA",
+                    "label": "Firma3_MontoSuperior",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_UserID",
+                    "label": "Firma3_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_Puesto",
+                    "label": "Firma3_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso3_PMUsuario_CampoEspecifico",
+                    "label": "Firma3_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_UserID",
+                    "label": "Firma4_UserID",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_Puesto",
+                    "label": "Firma4_Puesto:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.FirmaEnPaso4_PMUsuario_CampoEspecifico",
+                    "label": "Firma4_CampoEspecifico:",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.CargarComprobanteFiscal",
+                    "label": "CargarCompFiscal",
+                    "format": "string",
+                    "default": false,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "updated_at",
+                    "label": "Modified",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "created_at",
+                    "label": "Created",
+                    "format": "datetime",
+                    "default": true,
+                    "sortable": true
+                  },
+                  {
+                    "mask": null,
+                    "field": "data.MostrarCampoAdicional",
+                    "label": "Mostrar campo adicional de captura (otros proveedores)",
+                    "format": "boolean",
+                    "default": false,
+                    "sortable": true
+                  }
+                ],
+                "signal_create": false,
+                "signal_update": false,
+                "signal_delete": false,
+                "created_by_id": 1,
+                "updated_by_id": 6,
+                "created_at": "2021-02-26 20:28:18",
+                "updated_at": "2022-03-28 23:12:23",
+                "is_template": 0,
+                "asset_type": null,
+                "name_singular": "Solicitud de Cheque - Tipo de Gasto"
+              }
+            }
+          ],
+          "meta": {
+            "filter": "",
+            "sort_by": "",
+            "sort_order": "asc",
+            "count": 14,
+            "total_pages": 1,
+            "current_page": 1,
+            "from": 1,
+            "last_page": 1,
+            "links": [
+              {
+                "url": null,
+                "label": "&laquo; Previous",
+                "active": false
+              },
+              {
+                "url": "https://exel.cloud.processmaker.net/api/1.0/collections/16/records?page=1",
+                "label": "1",
+                "active": true
+              },
+              {
+                "url": null,
+                "label": "Next &raquo;",
+                "active": false
+              }
+            ],
+            "path": "https://exel.cloud.processmaker.net/api/1.0/collections/16/records",
+            "per_page": 20,
+            "to": 14,
+            "total": 14
+          }
+        }
+
+      </textarea>
+    </div>
+  
+    <div class="form-group text-center">
+      <button class="btn btn-primary" onclick="createTable()">Crear Tabla</button>
+    </div>
+  
+    <div class="table-responsive">
+      <table id="jsonTable" class="table table-bordered">
+        <thead>
+          <tr>
+            <!-- Encabezados de la tabla -->
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  
+    <div class="form-group">
+      <textarea id="sqlCreateTable" rows="5" class="form-control" placeholder="Instrucción SQL para crear la tabla"></textarea>
+    </div>
+  
+    <div class="form-group">
+      <textarea id="sqlInsertRecords" rows="10" class="form-control" placeholder="Instrucciones INSERT para los registros"></textarea>
+    </div>
+  </div>
+
+
+
+  <script>
+    function createTable() {
+      // Obtener el JSON del campo de texto
+      const jsonText = document.getElementById('jsonInput').value;
+      const jsonData = JSON.parse(jsonText);
+
+      // Obtener el nombre de la tabla destino
+      const tableName = document.getElementById('tableNameInput').value || 'TablaNombre';
+
+      // Obtener la tabla y el encabezado de la tabla
+      const table = document.getElementById('jsonTable');
+      const tableHead = table.getElementsByTagName('thead')[0].getElementsByTagName('tr')[0];
+
+      // Limpiar la tabla
+      tableHead.innerHTML = '';
+      table.getElementsByTagName('tbody')[0].innerHTML = '';
+
+      // Obtener las claves del objeto 'data' para usarlas como encabezados
+      const keys = Object.keys(jsonData.data[0].data);
+
+      // Crear celdas de encabezado para cada clave
+      keys.forEach(key => {
+        const th = document.createElement('th');
+        th.textContent = key;
+        tableHead.appendChild(th);
+      });
+
+      // Obtener el cuerpo de la tabla
+      const tableBody = table.getElementsByTagName('tbody')[0];
+
+      // Recorrer los datos JSON y crear filas en la tabla
+      jsonData.data.forEach(item => {
+        const row = document.createElement('tr');
+
+        // Recorrer las claves y agregar celdas con los valores correspondientes
+        keys.forEach(key => {
+          const cell = document.createElement('td');
+          cell.textContent = item.data[key];
+          row.appendChild(cell);
+        });
+
+        tableBody.appendChild(row);
+      });
+
+      // Generar instrucción SQL para crear la tabla
+      const sqlCreateTable = `CREATE TABLE ${tableName} (
+  ${keys.map(key => `${key} ${getColumnType(jsonData.data[0].data[key])}`).join(',\n  ')}
+);`;
+      document.getElementById('sqlCreateTable').value = sqlCreateTable;
+
+      // Generar instrucciones INSERT para los registros
+      const sqlInsertRecords = jsonData.data.map(item => {
+        const values = keys.map(key => {
+          const value = item.data[key];
+          return typeof value === 'string' ? `'${value.replace(/'/g, "''")}'` : (value === null ? 'NULL' : (typeof value === 'boolean' ? (value ? '1' : '0') : value));
+        });
+        return `INSERT INTO ${tableName} (${keys.join(', ')}) VALUES (${values.join(', ')});`;
+      }).join('\n');
+      document.getElementById('sqlInsertRecords').value = sqlInsertRecords;
+    }
+
+    function getColumnType(value) {
+      const type = typeof value;
+      switch (type) {
+        case 'number':
+          return 'DECIMAL(18,2)';
+        case 'boolean':
+          return 'BIT';
+        case 'string':
+          return 'NVARCHAR(MAX)';
+        case 'object':
+          if (value === null) {
+            return 'NVARCHAR(MAX)';
+          } else {
+            return 'NVARCHAR(MAX)';
+          }
+        default:
+          return 'NVARCHAR(MAX)';
+      }
+    }
+  </script>
+
+
+<script src="https://unpkg.com/read-excel-file@5.x/bundle/read-excel-file.min.js"></script>
+
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+</body>
+</html>
